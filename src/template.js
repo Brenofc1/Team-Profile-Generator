@@ -39,7 +39,7 @@ const generateTeam = team => {
         `;
     };
 
-    // create the html for employees
+    // create the html for employee
     const generateEmployee = employee => {
         return `
 <div class="card employee-card">
@@ -52,7 +52,7 @@ const generateTeam = team => {
             <li class="list-group-item">ID: ${employee.getId()}</li>
             <li class="list-group-item">ID: ${employee.getFunction()}</li>
             <li class="list-group-item">Email: <a href="mailto:${employee.getEmail()}">${employee.getEmail()}</a></li>
-            <li class="list-group-item">GitHub: <a href="https://github.com/${employee.getGithub()}" target="_blank" rel="noopener noreferrer">${engineer.getGithub()}</a></li>
+            <li class="list-group-item">GitHub: <a href="https://github.com/${employee.getGithub()}" target="_blank" rel="noopener noreferrer">${employee.getGithub()}</a></li>
         </ul>
     </div>
 </div>
