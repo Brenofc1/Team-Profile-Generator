@@ -125,12 +125,12 @@ function addEngineer() {
         name: "employeeId",
         message: "Please enter the employee's ID number:" 
       },
-      
-//I wanted to add 'function' to employee, I know it is not required.
+
+//I wanted to add 'functions' to employee, I know it is not required.
       {
         type: "input",
-        name: "employeeFunction",
-        message: "Please enter the employee's Function:" 
+        name: "employeeFunctions",
+        message: "Please enter the employee's Functions:" 
       },
 
       {
@@ -147,7 +147,7 @@ function addEngineer() {
       }
 
     ]).then(answers => {
-      const employee = new Employee(answers.employeeName, answers.employeeId, answers.employeeFunction, answers.employeeEmail, answers.employeeGithub);
+      const employee = new Employee(answers.employeeName, answers.employeeId, answers.employeeFunctions, answers.employeeEmail, answers.employeeGithub);
       teamArray.push(employee);
       createTeam();
     });
