@@ -39,26 +39,6 @@ const generateTeam = team => {
         `;
     };
 
-    // create the html for employee
-    const generateEmployee = employee => {
-        return `
-<div class="card employee-card">
-    <div class="card-header bg-primary text-white">
-        <h2 class="card-title">${employee.getName()}</h2>
-        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>${employee.getRole()}</h3>
-    </div>
-    <div class="card-body">
-        <ul class="list-group">
-            <li class="list-group-item">ID: ${employee.getId()}</li>
-            <li class="list-group-item">ID: ${employee.getFunction()}</li>
-            <li class="list-group-item">Email: <a href="mailto:${employee.getEmail()}">${employee.getEmail()}</a></li>
-            <li class="list-group-item">GitHub: <a href="https://github.com/${employee.getGithub()}" target="_blank" rel="noopener noreferrer">${employee.getGithub()}</a></li>
-        </ul>
-    </div>
-</div>
-        `;
-    };
-
     // create the html for interns
     const generateIntern = intern => {
         return `
