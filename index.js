@@ -1,6 +1,5 @@
 const Manager = require("./lib/Manager.js");
 const Engineer = require("./lib/Engineer.js");
-const Employee = require("./lib/Employee.js");
 const Intern = require("./lib/Intern.js");
 const inquirer = require("inquirer");
 const path = require("path");
@@ -18,7 +17,7 @@ function runApp () {
       type: "list",
       message: "Please select the desired option to add to your team:",
       name: "addEmployeePrompt",
-      choices: ["Manager", "Engineer", "Employee", "Intern", "Stop selection."]
+      choices: ["Manager", "Engineer", "Intern", "Stop selection."]
     }]).then(function (userInput) {
       switch(userInput.addEmployeePrompt) {
         case "Manager":
@@ -27,13 +26,9 @@ function runApp () {
         case "Engineer":
           addEngineer();
           break;
-          case "Employee":
-            addEmployee();
-            break;
         case "Intern":
           addIntern();
           break;
-
         default:
           htmlBuilder();
       }
@@ -111,50 +106,7 @@ function addEngineer() {
 
   }
 
-  function addEmployee() {
-    inquirer.prompt([
-      
-      {
-        type: "input",
-        name: "employeeName",
-        message: "Please enter the employee's name:"
-      },
-
-      {
-        type: "input",
-        name: "employeeId",
-        message: "Please enter the employee's ID number:" 
-      },
-
-//I wanted to add 'functions' to employee, I know it is not required.
-      {
-        type: "input",
-        name: "employeeFunctions",
-        message: "Please enter the employee's Functions:" 
-      },
-
-      {
-        type: "input",
-        name: "employeeEmail",
-        message: "Please enter the employee's email address:"
-      },
-
-//I wanted to add 'GitHub' to employee, I know it is not required.
-      {
-        type: "input",
-        name: "employeeGithub",
-        message: "Please enter the employee's GitHub username:"
-      }
-
-    ]).then(answers => {
-      const employee = new Employee(answers.employeeName, answers.employeeId, answers.employeeFunctions, answers.employeeEmail, answers.employeeGithub);
-      teamArray.push(employee);
-      createTeam();
-    });
-
-  }
-
-  function addIntern() {
+   function addIntern() {
     inquirer.prompt([
       
       {
@@ -166,13 +118,13 @@ function addEngineer() {
       {
         type: "input",
         name: "internId",
-        message: "Please enter the intern's employee ID number?" 
+        message: "Please enter the intern's intern's ID number:" 
       },
 
       {
         type: "input",
         name: "internEmail",
-        message: "Please enter the intern's email address?"
+        message: "Please enter the intern's email address:"
       },
 
       {
