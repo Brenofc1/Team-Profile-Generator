@@ -46,5 +46,5 @@ This is a screenshot of the generated HTML webpage.
 ![Team Generator HTML Webpage Screenshot](./assets/Team-Profile-Generator_Screenshot.jpg)
 
 ## Walkthrough Video
-![Team Generator Walkthrough Video](https://drive.google.com/file/d/1QZQg9zyFsjBGaJh3ttwzygy-DE-QsHGg/view)
 
+[![Video](https://drive.google.com/file/d/1QZQg9zyFsjBGaJh3ttwzygy-DE-QsHGg/view)
