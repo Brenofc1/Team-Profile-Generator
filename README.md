@@ -47,4 +47,4 @@ This is a screenshot of the generated HTML webpage.
 
 ## Walkthrough Video
 
-[![Video](https://drive.google.com/file/d/1QZQg9zyFsjBGaJh3ttwzygy-DE-QsHGg/view)
+[![Video](./assets/video.webm)
